@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Compra de Boletos - CatGalaxy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": {
+              "DEFAULT": "#4F46E5", // Vibrant Blue
+              "light": "#EC4899" // Vibrant Pink
+            },
+            "secondary": "#A855F7", // Vibrant Purple
+            "background-light": "#F5F3FF",
+            "background-dark": "#1E1B4B",
+            "text-light": "#111827",
+            "text-dark": "#F5F3FF"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 md:px-10 lg:px-20 mx-auto max-w-7xl">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 py-4">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-3xl">roller_skating</span>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">CatGalaxy</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Atracciones</a>
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Shows</a>
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Restaurantes</a>
+<a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Eventos</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Mi Cuenta</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-primary/20 text-primary-light dark:text-primary-light gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined text-lg">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 md:px-10 lg:px-20 py-10 mx-auto max-w-7xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[320px]" data-alt="A thrilling roller coaster ride at the amusement park" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6MiPdLAFjAiypMHRQrhKJuQKa1zjpuk7i2JGb7oNbjmQ3rUHrXcwUs3oH_-Iey1rI9XntLWTBYbTAqeXjh-CN39mlyuccz5RqSbVCHpYEBrsJrsl-foD4iy5y2E0lPhewnE-J9SkkhkkQPnwcYseGZJHtwDKx3fCUjH2jGT1TWPkzTb3d0ehiyjn-lQAZIhKrnyvOmrQpugHEoQN5K_Okaf7CbqePiDTqYIRdItwXCsTz5mRUMmK9iN_l57vVfu_4PiLlb8yP6-aS");'>
+<div class="p-6 md:p-8">
+<h1 class="text-white text-3xl md:text-4xl font-bold tracking-tight">Compra tus Boletos para CatGalaxy</h1>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">1. Elige tus Boletos</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark border border-primary/20 dark:border-secondary/30 p-4 rounded-lg justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold">Boleto de Adulto</p>
+<p class="text-sm font-normal text-text-light/70 dark:text-text-dark/70">Para mayores de 12 años. Acceso a todas las atracciones.</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-primary/20 hover:bg-primary/30 text-primary cursor-pointer transition-colors">-</button>
+<input class="text-base font-bold w-6 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 focus:border-none border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="1"/>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-primary/20 hover:bg-primary/30 text-primary cursor-pointer transition-colors">+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark border border-primary/20 dark:border-secondary/30 p-4 rounded-lg justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-primary-light flex items-center justify-center rounded-lg bg-primary-light/10 shrink-0 size-12">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold">Boleto de Niño</p>
+<p class="text-sm font-normal text-text-light/70 dark:text-text-dark/70">Para niños de 3 a 11 años. Se requiere supervisión de un adulto.</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-primary-light/20 hover:bg-primary-light/30 text-primary-light cursor-pointer transition-colors">-</button>
+<input class="text-base font-bold w-6 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 focus:border-none border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="0"/>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-primary-light/20 hover:bg-primary-light/30 text-primary-light cursor-pointer transition-colors">+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark border border-primary/20 dark:border-secondary/30 p-4 rounded-lg justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-secondary flex items-center justify-center rounded-lg bg-secondary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">star</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold">Pase Anual</p>
+<p class="text-sm font-normal text-text-light/70 dark:text-text-dark/70">Visitas ilimitadas durante todo el año. Descuentos exclusivos.</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-secondary/20 hover:bg-secondary/30 text-secondary cursor-pointer transition-colors">-</button>
+<input class="text-base font-bold w-6 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 focus:border-none border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="0"/>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-secondary/20 hover:bg-secondary/30 text-secondary cursor-pointer transition-colors">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">2. Selecciona tu fecha de visita</h3>
+<div class="bg-white dark:bg-background-dark p-4 rounded-lg border border-primary/20 dark:border-secondary/30 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 rounded-full hover:bg-primary/20 text-primary-light transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<h4 class="text-lg font-bold">Julio 2025</h4>
+<button class="p-2 rounded-full hover:bg-primary/20 text-primary-light transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-sm">
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Dom</div>
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Lun</div>
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Mar</div>
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Mié</div>
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Jue</div>
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Vie</div>
+<div class="font-medium text-text-light/50 dark:text-text-dark/50">Sáb</div>
+<div class="text-text-light/40 dark:text-text-dark/40">30</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">1</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">2</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">3</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">4</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">5</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer text-text-light/40 dark:text-text-dark/40 line-through">6</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">7</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">8</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">9</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">10</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer bg-primary text-white font-bold">11</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">12</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer text-text-light/40 dark:text-text-dark/40 line-through">13</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">14</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">15</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">16</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">17</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">18</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">19</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer text-text-light/40 dark:text-text-dark/40 line-through">20</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">21</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">22</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">23</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">24</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">25</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">26</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer text-text-light/40 dark:text-text-dark/40 line-through">27</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">28</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">29</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">30</div>
+<div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-primary-light/20 transition-colors">31</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1">
+<div class="sticky top-28 space-y-6 bg-white dark:bg-background-dark border border-primary/20 dark:border-secondary/30 p-6 rounded-xl shadow-lg">
+<h3 class="text-2xl font-bold">Tu Orden</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<p>1 x Boleto de Adulto</p>
+<p class="font-medium">$230.00 MX</p>
+</div>
+<div class="flex justify-between items-center text-text-light/70 dark:text-text-dark/70">
+<p>0 x Boleto de Niño</p>
+<p class="font-medium">$0.00</p>
+</div>
+<div class="flex justify-between items-center text-text-light/70 dark:text-text-dark/70">
+<p>0 x Pase Anual</p>
+<p class="font-medium">$0.00</p>
+</div>
+</div>
+<div class="border-t border-primary/20 dark:border-secondary/30 my-4"></div>
+<div class="space-y-2">
+<p class="font-bold">Fecha Seleccionada:</p>
+<p class="text-primary-light font-semibold">Jueves, 11 de Julio, 2025</p>
+</div>
+<div class="border-t border-primary/20 dark:border-secondary/30 my-4"></div>
+<div class="space-y-2">
+<div class="flex justify-between">
+<p>Subtotal</p>
+<p class="font-medium">$230</p>
+</div>
+<div class="flex justify-between">
+<p>Impuestos y tasas</p>
+<p class="font-medium">$8.10</p>
+</div>
+<div class="flex justify-between text-xl font-bold mt-2 text-primary dark:text-secondary">
+<p>Total</p>
+<p>$238.1</p>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-2 min-w-[84px] cursor-pointer rounded-full h-12 px-6 bg-gradient-to-r from-primary to-secondary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity shadow-lg">
+<a href="pago.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer">
+    <span class="truncate">Continuar</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

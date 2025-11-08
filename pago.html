@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resumen y Pago - CatGalexy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4F46E5",
+            "secondary": "#EC4899",
+            "accent": "#8B5CF6",
+            "background-light": "#f8f7f5",
+            "background-dark": "#1F2937",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#333333] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#F5F5F5] dark:border-gray-700 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-[#333333] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#333333] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"> CatGalaxy</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-gray-200 dark:bg-gray-700 text-[#333333] dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-[#333333] dark:text-white">person</span>
+</button>
+</div>
+</header>
+<div class="flex flex-wrap gap-2 p-4 justify-center">
+<a class="text-gray-500 dark:text-gray-400 text-base font-medium leading-normal hover:text-secondary" href="#">Canasta</a>
+<span class="text-gray-500 dark:text-gray-400 text-base font-medium leading-normal">/</span>
+<a class="text-gray-500 dark:text-gray-400 text-base font-medium leading-normal hover:text-secondary" href="#">Información</a>
+<span class="text-gray-500 dark:text-gray-400 text-base font-medium leading-normal">/</span>
+<span class="text-secondary dark:text-secondary text-base font-medium leading-normal">Pago</span>
+</div>
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<p class="text-[#333333] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Revisa y Paga tu Pedido</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4">
+<div class="flex flex-col gap-6">
+<h3 class="text-2xl font-bold text-[#333333] dark:text-white">Tu Canasta</h3>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-lg p-4 justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Adult Ticket Icon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzMk2-aHELR4_x7x_gugqVZdTQGPl0zFCyX7M05ZGa7cPKE_SLHl1lbHvFdbFAC3CAgk6l4YV2TgJ-HU4qrLBuDZdibjq7SHzYRVryFJiuq7GOdHHO8rJ4mAnjn4uTBx3548Tzu6IY6gnrM5Kdc6yYp6jb3EMq365QS3AV7RS2WN1tOndk3UoMrp7MaSUkERSRME7grb1CUBFeNmted2nT3nl2KpsGZPzl6TZ6UVUaKL_9_MFJ6AI8XQnQi81Wf2wCKpYsP1jjmhnA");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-[#333333] dark:text-white text-base font-medium leading-normal line-clamp-1">Boleto de Adulto (1 día)</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Cantidad: 2</p>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-[#333333] dark:text-white text-base font-normal leading-normal">$150.00</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-lg p-4 justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Child Ticket Icon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2LuzDMSY2K_-X9x1cBQy7os7hOv95xECbhVjEt7E7el64eNTvHIHTQozMCiLlU3XOM7ZGBLTjhboiZumBgShoECPXjvk1Yp68sSm5lr654dvjKYmkDyBq0UxiFYgJk4OStlLOWN2JxUYS8P45T93vDFc49xXU1U-R-zBK0vfUSHFp3mkg-E_GtftRm3dJmiiRVnaOuwO57-JoiSf3jrIH1Oa1zUegdFT_1zdSEXLJuuPp0gRAZZVPxVlqDkZCeBdW-wKKJL_dqs5X");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-[#333333] dark:text-white text-base font-medium leading-normal line-clamp-1">Boleto de Niño (1 día)</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Cantidad: 1</p>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-[#333333] dark:text-white text-base font-normal leading-normal">$50.00</p>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 pt-4 flex flex-col gap-2">
+<p class="text-gray-600 dark:text-gray-300"><span class="font-bold">Fecha de Visita:</span> 25 de Diciembre, 2023</p>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 pt-4 flex flex-col gap-2">
+<div class="flex justify-between text-gray-600 dark:text-gray-300">
+<span>Subtotal</span>
+<span>$200.00</span>
+</div>
+<div class="flex justify-between text-gray-600 dark:text-gray-300">
+<span>Impuestos</span>
+<span>$16.00</span>
+</div>
+<div class="flex justify-between text-[#333333] dark:text-white font-bold text-lg mt-2">
+<span>Total</span>
+<span>$216.00</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-2xl font-bold text-[#333333] dark:text-white">Selecciona tu Método de Pago</h3>
+<div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+<div class="flex border-b border-gray-200 dark:border-gray-700 mb-4">
+<button class="py-2 px-4 border-b-2 border-secondary text-secondary font-semibold">Tarjeta de Crédito/Débito</button>
+<button class="py-2 px-4 text-gray-500 dark:text-gray-400 font-semibold hover:text-secondary dark:hover:text-secondary">PayPal</button>
+<button class="py-2 px-4 text-gray-500 dark:text-gray-400 font-semibold hover:text-secondary dark:hover:text-secondary">Otros</button>
+</div>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="card-number">Número de Tarjeta</label>
+<div class="relative">
+<input class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-[#333333] dark:text-white focus:ring-secondary focus:border-secondary" id="card-number" name="card-number" placeholder="•••• •••• •••• ••••" type="text"/>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none gap-1">
+<img class="h-5" data-alt="Visa Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOL6CDesAXJB7IvFAVA9xZzPkC8gfmSaiw2GF9qJhMiSH8zVgex2DDeu8Z8f6a8xczNz42V9e2zvgDXKB5q6Dl5F61Vyr9IvfXavaCCUC3BObBg8uMcp2zCr_1BUHMIR-qpbaTnR0KTJ0z1unVYZK1pFaYM_ElZCGwzuigsruIFF0NxtnKwiw5zfAQPY3Z2h78BpjsRzow2Vw-nIv0vR72mJ_z5rbH9ii7-CgSX93-gfZlszybDBOgHgc-pdTDybzXsfy6Bn0iM83I"/>
+<img class="h-5" data-alt="Mastercard Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqK9Pkc73XWLjhXCEglLIysSfp1k7Seqhp3bZkCT6g-I9-BEvurhlZH811w3Nr7chGwxxAx-EmJfqLxEHRLjqvqUXQ1wZvCuBJtLI9DOPa7MNH_RnJCZ8lRFGQCWrs1hHnDYlGtgA8bTNCRSolcHlubE2IwlWRucweWnwjm_pq1SncozN2kjgN9yXgwrB1gNgTaWaucjUSzA3azcSboRsjnw6vHUHpHtKpw1N-Wt0m4daiBn8O23IBsSpOlFmABB3xVG4LMrhGU_No"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="card-name">Nombre en la Tarjeta</label>
+<input class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-[#333333] dark:text-white focus:ring-secondary focus:border-secondary" id="card-name" name="card-name" placeholder="John Doe" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="expiry-date">Fecha de Vencimiento (MM/AA)</label>
+<input class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-[#333333] dark:text-white focus:ring-secondary focus:border-secondary" id="expiry-date" name="expiry-date" placeholder="MM/AA" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="cvv">CVV</label>
+<input class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-[#333333] dark:text-white focus:ring-secondary focus:border-secondary" id="cvv" name="cvv" placeholder="123" type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-2 text-sm text-green-600 dark:text-green-400 mt-4">
+<span class="material-symbols-outlined">lock</span>
+<span>Pago 100% Seguro</span>
+</div>
+</form>
+</div>
+
+<button >
+    <a href="pedido.html" class="truncate material-symbols-outlined flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-gradient-to-r from-secondary to-accent text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">Pagar $230 arrow_forward</a>
+ </button>
+</div>
+</div>
+<footer class="text-center text-gray-500 dark:text-gray-400 text-sm p-4 mt-8 border-t border-[#F5F5F5] dark:border-gray-700">
+<p>© 2025 CatGalexy. Todos los derechos reservados.</p>
+<div class="flex justify-center gap-4 mt-2">
+<a class="hover:text-secondary" href="#">Términos y Condiciones</a>
+<a class="hover:text-secondary" href="#">Política de Privacidad</a>
+<a class="hover:text-secondary" href="#">Contacto</a>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
